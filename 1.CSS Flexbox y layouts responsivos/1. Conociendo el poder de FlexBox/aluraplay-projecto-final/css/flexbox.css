@@ -1,0 +1,17 @@
+.cabecera__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed ;
+    top: 0;
+}
+
+.cabecera__buscar__item{
+    display: none; 
+ }
+
+@media (min-width: 834px){
+    .cabecera__buscar__item{
+        display: block; 
+     }
+}
