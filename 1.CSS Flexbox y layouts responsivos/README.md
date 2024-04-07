@@ -3,6 +3,7 @@
 * [**Responsive Web Design - Media Queries**](https://[https://www.w3schools.com/css/css_rwd_mediaqueries.asp)
 * [**Puntos de ruptura en el diseño responsivo**](https://www.aluracursos.com/blog/puntos-de-ruptura-en-el-diseno-responsivo)
 * [**A Complete Guide to Flexbox**](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+* [**CSS Flex Container**](https://www.w3schools.com/css/css3_flexbox_container.asp)
 
 # **Recursos para practicar flexbox**
 
