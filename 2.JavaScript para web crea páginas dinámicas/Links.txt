@@ -3,3 +3,6 @@ https://www.aluracursos.com/blog/que-es-dom
 
 HTML, CSS y Javascript, ¿cuáles son las diferencias?
 https://www.aluracursos.com/blog/html-css-javascript-cuales-son-las-diferencias
+
+Cuándo usar let, var y const?
+https://www.youtube.com/watch?v=PztCEdIJITY
