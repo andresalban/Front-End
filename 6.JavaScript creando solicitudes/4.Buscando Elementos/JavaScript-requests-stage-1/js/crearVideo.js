@@ -1,19 +1,19 @@
-import {conexionAPI} from "./conexionAPI.js";
+import { conectaAPI } from "./conectaAPI.js";
 
-const formulario = document.querySelector('[data-formulario]');
+const formulario = document.querySelector("[data-formulario]");
 
+//validaciones
 
-async function crearVideo(evento) {
+async function crearVideo(evento){
     evento.preventDefault();
+    const imagen= document.querySelector("[data-imagen]").value;
+    const url = document.querySelector("[data-url]").value;
+    const titulo=document.querySelector("[data-titulo]").value;
+    const descripcion = Math.floor(Math.random()*10).toString();
 
-    const titulo = document.querySelector('[data-titulo]').value;
-    const url = document.querySelector('[data-url]').value;
-    const imagem = document.querySelector('[data-imagem]').value;
+    await conectaAPI.crearVideo(titulo,descripcion,url,imagen)
 
-    const descripcion = Math.floor(Math.random * 10).toString();
-
-    await conexionAPI.enviarVideo(titulo,descripcion,url,imagem);
     window.location.href="../pages/envio-concluido.html"
 }
 
-formulario.addEventListener("submit", evento => crearVideo(evento));
+formulario,addEventListener("submit",evento=>crearVideo(evento));
