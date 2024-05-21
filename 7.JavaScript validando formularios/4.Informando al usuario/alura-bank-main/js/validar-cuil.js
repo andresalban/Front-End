@@ -2,11 +2,13 @@ export default function esUnCuil(campo) {
     const cuil = campo.value.replace(/[-\/]/g, "");
     
     if (tieneNumerosRepetidos(cuil)) {
-        console.log("valores Repetidos");
+        //console.log("valores Repetidos");
+        campo.setCustomValidity("Valores Repetidos")
     }else if (validarPrimeroDigitos(cuil) && validarDigitoVerificador(cuil)) {
         console.log("Cuil valido");
     } else {
-        console.log("cuil no existe");
+      //  console.log("cuil no existe");
+        campo.setCustomValidity("Cuil No Existe")
     }
 };
 
